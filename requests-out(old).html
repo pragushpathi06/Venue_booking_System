@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.667);
+  padding: 80px;
+  width: 600px;
+  height: 550px;
+}
+.submit{
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px;
+}
+</style>
+<center>
+</head>
+<body>
+ 
+<form action="new.php" method="post">
+<div><h2><center> CHOOSE YOUR REQUIREMENTS</h2>
+  <label for="cars">PREFERENCE:</label>
+  <select name="preference" id="preference" >
+    <option value=" "> </option>
+    <option value="classroom">Classroom</option>
+    <option value="Seminar Hall">Seminar Hall</option>
+    <option value="Auditorium">Auditorium</option>
+  </select>
+  <br><br>
+  <label for="cars">NEED FOR THE VENUE:</label> q2
+  <select name="need" id="need" >
+  <option value=" "> </option>
+    <option value="ACADEMIC CLASSES">ACADEMIC CLASSES</option>
+    <option value="SPECIAL LAB TRAINING">SPECIAL LAB TRAINING</option>
+    <option value="CLUB ACTIVITY">CLUB ACTIVITY</option>
+    <option value="WORKSHOP">WORKSHOP</option>
+    <option value="FACULTY INITIATIVE">FACULTY INITIATIVE</option>
+    <option value="SKILL">SKILL TRAINING</option>
+    <option value="HANDS-ON">HANDS ON TRAINING</option>
+  </select>
+  <br><br>
+<label for="capacity">CAPACITY: </label>
+<input type="number" id="capacity" name="capacity" min="1" max="400">
+<br>
+  <label for="capacity">PROJECTORS REQUIRED:</label>
+  <input type="radio" id="yes" name="projectors" value="Yes">
+  <label for="html">YES</label>
+  <input type="radio" id="no" name="projectors" value="No">
+  <label for="css">NO</label><br>
+<br>
+<label for="capacity"> SPEAKERS REQUIRED:</label>
+<input type="radio" id="YES" name="speakers" value="Yes">
+<label for="html">YES</label>
+<input type="radio" id="NO" name="speakers" value="No">
+<label for="css">NO</label><br>
+<br> 
+<br>
+  <label for="birthdaytime">FROM DATE : </label>
+  <input type="date" id="birthdaytime" name="fromdate">
+<BR /><BR />
+  <label for="birthdaytime">TO DATE : </label>
+  <input type="date" id="birthdaytime" name="todate">
+<BR /><BR />
+  <label for="birthdaytime">FROM TIME : </label>
+  <input type="time" id="birthdaytime" name="fromtime">
+  <label for="birthdaytime">TO TIME : </label>
+  <input type="time" id="birthdaytime" name="totime"><br /><br />
+  <label for="birthdaytime">FACULTY ID : </label>
+  <input type="text" id="facultyid" name="facultyid"><br /><br />
+<input type="submit"  value="Submit" class="submit" name="submit">
+</form>
+
+</center>
+</div>
+</body>
+</center>
+</html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  *{
+    cursor: none;
+  }
+  
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 80%;
+    background-color: transparent;
+    border: 3px solid #1902c5;
+    z-index: 9999;
+    pointer-events: none;
+    animation: float 1.5s ease-in-out infinite;
+    cursor:none;
+  }
+  body {
+    cursor: none;
+  }
+  
+  .nav-item :hover{
+     background: #eaecf4;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
